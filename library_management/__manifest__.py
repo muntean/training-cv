@@ -9,7 +9,7 @@
         This module will allow us to have a good management for the clients and the books of our library
     """,
 
-    'author': "My Company",
+    'author': "Veronica Cucul - Bisstech",
     'website': "http://www.yourcompany.com",
 
     'category': 'Library',
