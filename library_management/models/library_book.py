@@ -10,7 +10,7 @@ class Book(models.Model):
     name = fields.Char(string='Title', required=True)
     description = fields.Text(string='Description')
     edition_year = fields.Integer(string='Year of edition')
-    isbn = fields.Integer(string='ISBN', required=True)
+    isbn = fields.Char(string='ISBN', required=True)
     genre = fields.Selection(string='Genre',
                              selection=[('action_and_adventure', 'Action & Adventure'), ('fantasy', 'Fantasy'),
                                         ('romance', 'Romance'),

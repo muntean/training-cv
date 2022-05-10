@@ -8,18 +8,21 @@
             <field name="genre">fantasy</field>
             <field name="edition_year">2000</field>
             <field name="authors">V. C. James</field>
+            <field name="isbn">1-2-3</field>
         </record>
         <record model="library.book" id="fantasy_marry_book">
             <field name="name">Marry's adventures</field>
             <field name="genre">fantasy</field>
             <field name="edition_year">2005</field>
             <field name="authors">V. C. James</field>
+            <field name="isbn">2-4-5</field>
         </record>
         <record model="library.book" id="treasure_island_book">
             <field name="name">The Treasure of the Island</field>
             <field name="genre">action_and_adventure</field>
             <field name="edition_year">2011</field>
             <field name="authors">C. Lucas</field>
+            <field name="isbn">3-3-3</field>
         </record>
         <record model="library.book" id="biography_vera_book">
             <field name="name">Vera Smith</field>
@@ -29,12 +32,14 @@
             <field name="genre">biography</field>
             <field name="edition_year">2020</field>
             <field name="authors">Vera Smith</field>
+            <field name="isbn">4-5-8</field>
         </record>
         <record model="library.book" id="history_queen_book">
             <field name="name">The queen's life</field>
             <field name="genre">history</field>
             <field name="edition_year">2008</field>
             <field name="authors">F. Jones</field>
+            <field name="isbn">5-5-5-0</field>
         </record>
     </data>
 </odoo>
