@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="library.book" id="fantasy_emma_book">
+            <field name="name">Emma</field>
+            <field name="description">The book follows Emma, a young woman who discovers her magical powers
+            </field>
+            <field name="genre">fantasy</field>
+            <field name="edition_year">2000</field>
+            <field name="authors">V. C. James</field>
+        </record>
+        <record model="library.book" id="fantasy_marry_book">
+            <field name="name">Marry's adventures</field>
+            <field name="genre">fantasy</field>
+            <field name="edition_year">2005</field>
+            <field name="authors">V. C. James</field>
+        </record>
+        <record model="library.book" id="treasure_island_book">
+            <field name="name">The Treasure of the Island</field>
+            <field name="genre">action_and_adventure</field>
+            <field name="edition_year">2011</field>
+            <field name="authors">C. Lucas</field>
+        </record>
+        <record model="library.book" id="biography_vera_book">
+            <field name="name">Vera Smith</field>
+            <field name="description">
+                The book describes the life of Vera Smith.
+            </field>
+            <field name="genre">biography</field>
+            <field name="edition_year">2020</field>
+            <field name="authors">Vera Smith</field>
+        </record>
+        <record model="library.book" id="history_queen_book">
+            <field name="name">The queen's life</field>
+            <field name="genre">history</field>
+            <field name="edition_year">2008</field>
+            <field name="authors">F. Jones</field>
+        </record>
+    </data>
+</odoo>

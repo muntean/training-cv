@@ -20,5 +20,6 @@
     # always loaded
     'data': [],
     'demo': [
+        'demo/library_management_demo.xml',
     ],
 }

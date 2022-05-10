@@ -12,9 +12,9 @@ class Book(models.Model):
     edition_year = fields.Integer(string='Year of edition')
     isbn = fields.Integer(string='ISBN', required=True)
     genre = fields.Selection(string='Genre',
-                             selection=[('action_and_adventure', 'Action & Adventure'), ('fantasy', 'Fantasy'), ('romance', 'Romance'),
-                                        ('history', 'History'), ('travel', 'Travel')])
+                             selection=[('action_and_adventure', 'Action & Adventure'), ('fantasy', 'Fantasy'),
+                                        ('romance', 'Romance'),
+                                        ('history', 'History'), ('travel', 'Travel'), ('biography', 'Biography')])
     authors = fields.Char(string='Authors')
     editors = fields.Char(string='Editors')
     publisher = fields.Char(string='Publisher')
-
