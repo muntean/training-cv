@@ -13,7 +13,7 @@
         </record>
         <menuitem name="Library"
                   id="menu_library"
-                  web_icon="library_management,static/description/library.png"
+                  web_icon="library_management,static/description/library_icon.png"
                   sequence="1"/>
         <menuitem id="menu_library_sub"
                   name="Library"

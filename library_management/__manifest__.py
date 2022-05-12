@@ -22,6 +22,7 @@
         'security/library_management_security.xml',
         'security/ir.model.access.csv',
         'views/library_management_menuitem.xml',
+        'views/library_management_views.xml',
     ],
     'demo': [
         'demo/library_management_demo.xml',

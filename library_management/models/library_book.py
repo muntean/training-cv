@@ -18,3 +18,6 @@ class Book(models.Model):
     authors = fields.Char(string='Authors')
     editors = fields.Char(string='Editors')
     publisher = fields.Char(string='Publisher')
+    active = fields.Boolean(string='Active', default=True)
+    note = fields.Text(string='Note')
+
