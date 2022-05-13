@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import UserError, ValidationError
 
 
 class Book(models.Model):
@@ -20,4 +21,9 @@ class Book(models.Model):
     publisher = fields.Char(string='Publisher')
     active = fields.Boolean(string='Active', default=True)
     note = fields.Text(string='Note')
+
+    @api.onchange('isbn')
+    def onchange_isbn(self):
+        if bool(self.isbn) and len(self.isbn) != 13:
+            raise ValidationError('The ISBN must have 13 digits. Please verify')
 
