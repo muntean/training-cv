@@ -11,6 +11,26 @@
                 </p>
             </field>
         </record>
+        <record model="ir.actions.act_window" id="rental_list_action">
+            <field name="name">Rentals</field>
+            <field name="res_model">library.rental</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocotent_smiling_face">
+                    Create the first rental
+                </p>
+            </field>
+        </record>
+         <record model="ir.actions.act_window" id="customer_list_action">
+            <field name="name">Customers</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocotent_smiling_face">
+                    Create the first customer
+                </p>
+            </field>
+        </record>
         <menuitem name="Library"
                   id="menu_library"
                   web_icon="library_management,static/description/library_icon.png"
@@ -24,5 +44,15 @@
                   parent="menu_library_sub"
                   sequence="3"
                   action="book_list_action"/>
+        <menuitem id="menu_library_rentals"
+                  name="Rentals"
+                  parent="menu_library_sub"
+                  sequence="4"
+                  action="rental_list_action"/>
+         <menuitem id="menu_library_customers"
+                  name="Customers"
+                  parent="menu_library_sub"
+                  sequence="5"
+                  action="customer_list_action"/>
     </data>
 </odoo>
