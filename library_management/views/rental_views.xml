@@ -8,20 +8,20 @@
             <field name="arch" type="xml">
                 <form string="Rental Form">
                     <sheet>
+                         <h1>
+                            <field name="name"/>
+                        </h1>
                         <group>
                             <group>
                                 <field name="customer_id"/>
+                                <field name="book_id"/>
                             </group>
                             <group>
                                 <field name="rental_date_start"/>
                                 <field name="rental_date_end"/>
+                                <field name="duration"/>
                             </group>
                         </group>
-                        <notebook>
-                            <page string="Books">
-                                <field name="book_ids"/>
-                            </page>
-                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -32,10 +32,37 @@
             <field name="model">library.rental</field>
             <field name="arch" type="xml">
                 <tree string="Rental List">
+                     <field name="name"/>
                     <field name="customer_id"/>
+                     <field name="book_id"/>
                     <field name="rental_date_start"/>
                     <field name="rental_date_end"/>
                 </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="rental_view_calendar">
+            <field name="name">rental.view.calendar</field>
+            <field name="model">library.rental</field>
+            <field name="arch" type="xml">
+               <calendar string="Rental Calendar"
+                         date_start="rental_date_start"
+                         date_stop="rental_date_end"
+                         color="customer_id"
+                         mode="month">
+                   <field name="customer_id"/>
+                    <field name="book_id"/>
+                </calendar>
+            </field>
+        </record>
+         <record model="ir.ui.view" id="rental_view_map">
+            <field name="name">rental.view.map</field>
+            <field name="model">library.rental</field>
+            <field name="arch" type="xml">
+                <map res_partner="customer_id" hide_address="true"  hide_name="true">
+                    <field name="customer_id" string="Customer"/>
+                    <field name="book_id" string="Book"/>
+                </map>
             </field>
         </record>
     </data>

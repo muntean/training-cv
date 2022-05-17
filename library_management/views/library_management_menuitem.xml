@@ -14,7 +14,7 @@
         <record model="ir.actions.act_window" id="rental_list_action">
             <field name="name">Rentals</field>
             <field name="res_model">library.rental</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,calendar,map</field>
             <field name="help" type="html">
                 <p class="o_view_nocotent_smiling_face">
                     Create the first rental

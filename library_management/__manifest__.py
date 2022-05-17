@@ -15,7 +15,7 @@
     'category': 'Library',
     'version': '0.3',
 
-    'depends': ['base'],
+    'depends': ['base', 'web_map'],
 
     # always loaded
     'data': [
