@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <odoo>
     <data>
-        <record model="ir.ui.view" id="book_view_form">
-            <field name="name">book.view.form</field>
-            <field name="model">library.book</field>
+        <record model="ir.ui.view" id="book_copy_view_form">
+            <field name="name">book.copy.view.form</field>
+            <field name="model">library.book.copy</field>
             <field name="arch" type="xml">
-                <form string="Book Form">
+                <form string="Book Copy Form">
                     <sheet>
                         <h1>
                             <field name="name"/>
                         </h1>
                         <group>
                             <group>
+                                  <field name="book_id"/>
                                 <field name="active"/>
+                                <field name="internal_reference"/>
                                 <field name="description"/>
                                 <field name="genre"/>
 
@@ -36,12 +37,14 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="book_view_list">
-            <field name="name">book.view.list</field>
-            <field name="model">library.book</field>
+         <record model="ir.ui.view" id="book_copy_view_list">
+            <field name="name">book.copy.view.list</field>
+            <field name="model">library.book.copy</field>
             <field name="arch" type="xml">
-                <tree string="Book List">
+                <tree string="Book Copy List">
                     <field name="name"/>
+                    <field name="internal_reference"/>
+                     <field name="book_id"/>
                     <field name="description"/>
                     <field name="genre"/>
                     <field name="authors"/>
@@ -50,17 +53,5 @@
                 </tree>
             </field>
         </record>
-
-        <record model="ir.ui.view" id="book_view_search">
-            <field name="name">book.view.search</field>
-            <field name="model">library.book</field>
-            <field name="arch" type="xml">
-                <search>
-                    <field name="authors"/>
-                    <field name="isbn"/>
-                </search>
-            </field>
-        </record>
-
     </data>
 </odoo>

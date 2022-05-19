@@ -10,7 +10,7 @@ class Rental(models.Model):
     _description = 'Library Rental'
 
     customer_id = fields.Many2one(comodel_name='res.partner', string='Customer')
-    book_id = fields.Many2one(comodel_name='library.book', string='Book')
+    book_id = fields.Many2one(comodel_name='library.book.copy', string='Book')
     name = fields.Char(related="book_id.name")
     rental_date_start = fields.Date(string="Start Date")
     rental_date_end = fields.Date(string="End Date", compute='_compute_rental_end_date', inverse='_inverse_rental_end_date', store=True)

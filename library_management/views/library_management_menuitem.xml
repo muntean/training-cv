@@ -21,13 +21,23 @@
                 </p>
             </field>
         </record>
-         <record model="ir.actions.act_window" id="customer_list_action">
+        <record model="ir.actions.act_window" id="customer_list_action">
             <field name="name">Customers</field>
             <field name="res_model">res.partner</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocotent_smiling_face">
                     Create the first customer
+                </p>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="book_copy_list_action">
+            <field name="name">Books Copies</field>
+            <field name="res_model">library.book.copy</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocotent_smiling_face">
+                    Create the first book copy
                 </p>
             </field>
         </record>
@@ -49,10 +59,15 @@
                   parent="menu_library_sub"
                   sequence="4"
                   action="rental_list_action"/>
-         <menuitem id="menu_library_customers"
+        <menuitem id="menu_library_customers"
                   name="Customers"
                   parent="menu_library_sub"
                   sequence="5"
                   action="customer_list_action"/>
+        <menuitem id="menu_library_books_copies"
+                  name="Books Copies"
+                  parent="menu_library_sub"
+                  sequence="6"
+                  action="book_copy_list_action"/>
     </data>
 </odoo>

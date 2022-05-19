@@ -24,7 +24,9 @@
         'views/library_management_menuitem.xml',
         'views/library_management_views.xml',
         'views/rental_views.xml',
-        'views/res_partner_views.xml'
+        'views/res_partner_views.xml',
+        'views/book_copy_views.xml',
+        'wizards/library_book_wizard.xml'
     ],
     'demo': [
         'demo/library_management_demo.xml',

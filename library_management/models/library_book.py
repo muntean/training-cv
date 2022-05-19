@@ -22,6 +22,8 @@ class Book(models.Model):
     active = fields.Boolean(string='Active', default=True)
     note = fields.Text(string='Note')
 
+    book_copy_ids = fields.One2many(comodel_name='library.book.copy', inverse_name='book_id', string='Book Copies')
+
     @api.onchange('isbn')
     def onchange_isbn(self):
         if bool(self.isbn) and len(self.isbn) != 13:
