@@ -15,7 +15,7 @@
     'category': 'Library',
     'version': '0.3',
 
-    'depends': ['base', 'web_map'],
+    'depends': ['base', 'web_map', 'website'],
 
     # always loaded
     'data': [
@@ -26,7 +26,9 @@
         'views/rental_views.xml',
         'views/res_partner_views.xml',
         'views/book_copy_views.xml',
-        'wizards/library_book_wizard.xml'
+        'wizards/library_book_wizard.xml',
+        'reports/rental_report_templates.xml',
+        'views/library_management_templates.xml'
     ],
     'demo': [
         'demo/library_management_demo.xml',

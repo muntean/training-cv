@@ -16,7 +16,7 @@ class LibraryBookWizard(models.TransientModel):
     customer_id = fields.Many2one(comodel_name='res.partner', string='Customer', required=True,
                                   default=default_customer)
 
-    book_ids = fields.Many2many(comodel_name='library.book.copy')
+    book_ids = fields.Many2many(comodel_name='library.book.copy', string="Books")
 
     display_books = fields.Boolean(string="Display Books", default=False)
     display_no_books_message = fields.Boolean(string="Display No Books Message", default=False)

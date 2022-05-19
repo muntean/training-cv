@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_rental" model="ir.actions.report">
+        <field name="name">Rental Report</field>
+        <field name="model">library.rental</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">library_management.report_rental_document</field>
+        <field name="report_file">library_management.rental_report</field>
+        <field name="binding_type">report</field>
+        <field name="binding_model_id" ref="model_library_rental"/>
+    </record>
+
+    <template id="report_rental_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name" class="mt16"/>
+                        <div class="row mt32 mb32" id="session_info">
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Rental Duration:</strong>
+                                <t t-if="doc.rental_date_start">
+                                    <span t-field="doc.rental_date_start"/>
+                                </t>
+                                to
+                                <t t-if="doc.rental_date_end">
+                                    <span t-field="doc.rental_date_end"/>
+                                </t>
+                            </div>
+                            <div t-if="doc.customer_id" class="col-auto mw-100 mb-2">
+                                <strong>Customer:</strong>
+                                <span t-field="doc.customer_id"/>
+                            </div>
+                            <div t-if="doc.book_id" class="col-auto mw-100 mb-2">
+                                <strong>Book:</strong>
+                                <span t-field="doc.book_id"/>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

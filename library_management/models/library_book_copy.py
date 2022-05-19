@@ -11,6 +11,9 @@ class BookCopy(models.Model):
     book_id = fields.Many2one(comodel_name='library.book', string='Book')
     internal_reference = fields.Char('Internal Reference')
 
+    rental_ids = fields.One2many(comodel_name='library.rental', inverse_name='book_id', string="Rentals")
+
+
     @api.onchange('internal_reference')
     def _onchange_internal_reference(self):
         if not self.internal_reference:
