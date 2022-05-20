@@ -13,7 +13,7 @@
     'website': "http://www.yourcompany.com",
 
     'category': 'Library',
-    'version': '0.3',
+    'version': '0.4',
 
     'depends': ['base', 'web_map', 'website'],
 
