@@ -1,0 +1,429 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_academy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-20 09:58+0000\n"
+"PO-Revision-Date: 2022-05-20 09:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.report_session_document
+msgid "<strong>Instructor: </strong>"
+msgstr ""
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.report_session_document
+msgid "<strong>Session Duration: </strong>"
+msgstr "<strong>Durata Sesiunii: </strong>"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "<strong>Sessions</strong>"
+msgstr "<strong>Sesiuni</strong>"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "Academy"
+msgstr "Academie"
+
+#. module: odoo_academy
+#: model:res.groups,name:odoo_academy.group_academy_admin
+msgid "Academy / Admin"
+msgstr "Academie / Admin"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__active
+msgid "Active"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__additional_fee
+msgid "Additional Fee"
+msgstr "Taxa aditionala"
+
+#. module: odoo_academy
+#: code:addons/odoo_academy/models/.ipynb_checkpoints/course-checkpoint.py:0
+#: code:addons/odoo_academy/models/course.py:0
+#, python-format
+msgid "Additional Fees cannot be less that 10.00: %s"
+msgstr "Taxele aditionale nu pot fi mai putin de 10.00: %s"
+
+#. module: odoo_academy
+#: model:ir.model.fields.selection,name:odoo_academy.selection__academy_course__level__advanced
+msgid "Advanced"
+msgstr "Avansat"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__base_price
+msgid "Base Price"
+msgstr "Pret de baza"
+
+#. module: odoo_academy
+#: code:addons/odoo_academy/models/.ipynb_checkpoints/course-checkpoint.py:0
+#: code:addons/odoo_academy/models/course.py:0
+#, python-format
+msgid "Base Price cannot be set as Negative"
+msgstr "Pretul de baza nu poate fi negativ"
+
+#. module: odoo_academy
+#: model:ir.model.fields.selection,name:odoo_academy.selection__academy_course__level__beginner
+msgid "Beginner"
+msgstr "Incepator"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.academy_sale_wizard_form_view
+msgid "Cancel"
+msgstr "Anuleaza"
+
+#. module: odoo_academy
+#: model:ir.model.fields.selection,name:odoo_academy.selection__academy_session__state__canceled
+msgid "Canceled"
+msgstr "Anulat"
+
+#. module: odoo_academy
+#: model:ir.model.fields,help:odoo_academy.field_product_product__is_session_product
+#: model:ir.model.fields,help:odoo_academy.field_product_template__is_session_product
+msgid "Check this box to use this as a Product for Session Fee"
+msgstr "Setati acest camp pentru a utiliza acest produs ca produs pentru taxă de sesiune"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__course_id
+msgid "Course"
+msgstr "Curs"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_view_form
+msgid "Course Form"
+msgstr "Formularul Cursului"
+
+#. module: odoo_academy
+#: model:ir.model,name:odoo_academy.model_academy_course
+msgid "Course Info"
+msgstr "Curs Inof"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_view_list
+msgid "Course List"
+msgstr "Curs Lista"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_website
+msgid "Course:"
+msgstr "Curs"
+
+#. module: odoo_academy
+#: model:ir.actions.act_window,name:odoo_academy.course_list_action
+#: model:ir.ui.menu,name:odoo_academy.menu_academy_courses
+msgid "Courses"
+msgstr "Cursuri"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "Courses&gt;"
+msgstr "Cursuri&gt;"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.academy_sale_wizard_form_view
+msgid "Create"
+msgstr "Creeaza"
+
+#. module: odoo_academy
+#: model:ir.actions.act_window,name:odoo_academy.launch_sale_wizard
+msgid "Create Sale Order"
+msgstr "Creeaza Comanda de Vanzare"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.academy_sale_wizard_form_view
+msgid "Create Sale Order for Session"
+msgstr "Creeaza Comanda de Vanzare pentru Sesiune"
+
+#. module: odoo_academy
+#: model_terms:ir.actions.act_window,help:odoo_academy.course_list_action
+msgid "Create the first course"
+msgstr "Creeaza Primul Curs"
+
+#. module: odoo_academy
+#: model_terms:ir.actions.act_window,help:odoo_academy.session_list_action
+msgid "Create the first session"
+msgstr "Creeaza Prima Sesiune"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__create_uid
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__create_uid
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__create_date
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__create_date
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__description
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_view_form
+msgid "Description"
+msgstr "Descriere"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "Description:"
+msgstr "Descriere:"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__display_name
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__display_name
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields.selection,name:odoo_academy.selection__academy_session__state__done
+msgid "Done"
+msgstr "Terminat"
+
+#. module: odoo_academy
+#: model:ir.model.fields.selection,name:odoo_academy.selection__academy_session__state__draft
+msgid "Draft"
+msgstr "Ciorna"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.report_session_document
+msgid "Email"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__id
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__id
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__id
+msgid "ID"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields.selection,name:odoo_academy.selection__academy_session__state__open
+msgid "In progress"
+msgstr "În curs"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__instructor_id
+msgid "Instructor"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields.selection,name:odoo_academy.selection__academy_course__level__intermediate
+msgid "Intermediate"
+msgstr "Intermediar"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course____last_update
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard____last_update
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_website
+msgid "Last Modified:"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__write_uid
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__write_uid
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__write_date
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__write_date
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "Last modified:"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__level
+msgid "Level"
+msgstr "Nivel"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "Level:"
+msgstr "Nivel:"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.report_session_document
+msgid "Name"
+msgstr ""
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "No Session Currently"
+msgstr "Momentan fara sesiuni"
+
+#. module: odoo_academy
+#: model:ir.ui.menu,name:odoo_academy.menu_academy
+#: model:ir.ui.menu,name:odoo_academy.menu_academy_sub
+msgid "Odoo Academy"
+msgstr "Academia Odoo"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.report_session_document
+msgid "Phone"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model,name:odoo_academy.model_product_template
+msgid "Product Template"
+msgstr "Șablon produs"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_sale_order__session_id
+msgid "Related Session"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model,name:odoo_academy.model_sale_order
+msgid "Sales Order"
+msgstr "Comandă de vânzare"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__session_id
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_website
+msgid "Session"
+msgstr "Sesiune"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_view_calendar
+msgid "Session Calendar"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__duration
+msgid "Session Days"
+msgstr "Zilele Sesiunii"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_view_form
+msgid "Session Form"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model,name:odoo_academy.model_academy_session
+msgid "Session Info"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_sale_order__instructor_id
+msgid "Session Instructor"
+msgstr "Instructorul Sesiunii"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_view_list
+msgid "Session List"
+msgstr ""
+
+#. module: odoo_academy
+#: model:ir.actions.report,name:odoo_academy.report_session
+msgid "Session Report"
+msgstr "Raport de Sesiune"
+
+#. module: odoo_academy
+#: model:ir.actions.act_window,name:odoo_academy.session_list_action
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__session_ids
+#: model:ir.ui.menu,name:odoo_academy.menu_academy_sessions
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_view_form
+msgid "Sessions"
+msgstr "Sesiuni"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__start_date
+msgid "Start Date"
+msgstr "Data de inceput"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__state
+msgid "States"
+msgstr "Stare"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__student_ids
+#: model:ir.model.fields,field_description:odoo_academy.field_sale_order__student_ids
+#: model_terms:ir.ui.view,arch_db:odoo_academy.report_session_document
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_view_form
+#: model_terms:ir.ui.view,arch_db:odoo_academy.view_order_from_inherit_academy
+msgid "Students"
+msgstr "Studenti"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__student_ids
+msgid "Students for Sales Order"
+msgstr "Studentii pentru Comenzile de vanzare"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__session_student_ids
+msgid "Students in Current Session"
+msgstr "Studentii in sesiunea curenta"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_website
+msgid "Students:"
+msgstr "Studenti:"
+
+#. module: odoo_academy
+#: model:ir.model.fields,help:odoo_academy.field_academy_sale_wizard__session_student_ids
+msgid "These are the students currently in the Session"
+msgstr "Aceștia sunt studenții aflați în prezent în Sesiune"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__name
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__name
+msgid "Title"
+msgstr "Titlu"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_course__total_price
+#: model:ir.model.fields,field_description:odoo_academy.field_academy_session__total_price
+msgid "Total Price"
+msgstr "Pret total"
+
+#. module: odoo_academy
+#: model:ir.model.fields,field_description:odoo_academy.field_product_product__is_session_product
+#: model:ir.model.fields,field_description:odoo_academy.field_product_template__is_session_product
+msgid "Used as Session Product"
+msgstr "Used as Session Product"
+
+#. module: odoo_academy
+#: model:ir.model,name:odoo_academy.model_academy_sale_wizard
+msgid "Wizard: Quick Sale Orders for Session Students"
+msgstr "Asistent: Comenzi de vânzare rapide pentru studenții din sesiune"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.academy_sale_wizard_form_view
+msgid "or"
+msgstr "sau"
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.report_session_document
+msgid "to"
+msgstr "la"
