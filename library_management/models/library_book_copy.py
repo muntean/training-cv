@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 from odoo.exceptions import UserError, ValidationError
 
 
@@ -9,7 +9,7 @@ class BookCopy(models.Model):
     _description = 'Library Book Copy'
     _inherits = {'library.book': 'book_id'}
     book_id = fields.Many2one(comodel_name='library.book', string='Book')
-    internal_reference = fields.Char('Internal Reference')
+    internal_reference = fields.Char('Internal Reference', required=True)
 
     rental_ids = fields.One2many(comodel_name='library.rental', inverse_name='book_id', string="Rentals")
 
@@ -24,6 +24,6 @@ class BookCopy(models.Model):
             domain.append(('id', '!=', self.id.origin))
 
         if self.env['library.book.copy'].search(domain, limit=1):
-            raise UserError("The Internal Reference %s already exists." % self.internal_reference)
+            raise UserError(_("The Internal Reference %s already exists.") % self.internal_reference)
 
 

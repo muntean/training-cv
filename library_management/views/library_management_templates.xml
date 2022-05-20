@@ -24,7 +24,7 @@
                             <p>Genre:
                                 <span t-field="book.genre"/>
                             </p>
-                            <p>Athors:
+                            <p>Authors:
                                 <span t-field="book.authors"/>
                             </p>
                         </t>

@@ -4,7 +4,6 @@ from odoo import models, fields, api
 from datetime import timedelta
 
 
-
 class Rental(models.Model):
     _name = 'library.rental'
     _description = 'Library Rental'
@@ -13,7 +12,8 @@ class Rental(models.Model):
     book_id = fields.Many2one(comodel_name='library.book.copy', string='Book')
     name = fields.Char(related="book_id.name")
     rental_date_start = fields.Date(string="Start Date")
-    rental_date_end = fields.Date(string="End Date", compute='_compute_rental_end_date', inverse='_inverse_rental_end_date', store=True)
+    rental_date_end = fields.Date(string="End Date", compute='_compute_rental_end_date',
+                                  inverse='_inverse_rental_end_date', store=True)
     duration = fields.Integer(string='Rental Days', default='1')
 
     @api.depends('rental_date_start', 'duration')

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 import logging
 
 _logger = logging.getLogger()
@@ -8,7 +8,7 @@ _logger = logging.getLogger()
 
 class LibraryBookWizard(models.TransientModel):
     _name = 'library.book.wizard'
-    _description = 'Wizard : View the customer rented books'
+    _description = _('Wizard : View the customer rented books')
 
     def default_customer(self):
         return self.env['res.partner'].browse(self._context.get('active_id'))
@@ -30,9 +30,9 @@ class LibraryBookWizard(models.TransientModel):
             self.write({'book_ids': [(6, 0, book_ids.ids)], 'display_books': True})
         else:
             self.write({'display_no_books_message': True,
-                        'no_books_message': 'The current customer does not have rented books.'})
+                        'no_books_message': _('The current customer does not have rented books.')})
         return {
-            'name': "Wizard : View the customer rented books",
+            'name': _("Wizard : View the customer rented books"),
             'view_mode': 'form',
             'view_type': 'form',
             'res_id': self.id,
